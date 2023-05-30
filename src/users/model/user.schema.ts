@@ -23,7 +23,7 @@ export class User {
   @Prop({ type: [{ type: SchemaTypes.ObjectId, ref: 'Post' }] })
   posts = [];
 
-  @Prop({ type: [{ type: SchemaTypes.ObjectId, ref: 'Post', unique: true }] })
+  @Prop({ type: [{ type: SchemaTypes.ObjectId, ref: 'Post' }] })
   likedPosts = [];
 }
 
